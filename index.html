@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Studyflow — Organize seus estudos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+<div id="page-landing" class="page active">
+  <nav class="main-nav">
+    <div class="nav-logo" onclick="showPage('page-landing')">
+      study<span class="flow">flow</span>
+    </div>
+    <div class="nav-actions">
+      <button class="btn-ghost" onclick="showPage('page-login')">entrar</button>
+      <button class="btn-primary" onclick="showPage('page-register')">criar conta</button>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-eyebrow">plataforma de estudos</div>
+    <h1>organize seus estudos,<br><span>alcance seus objetivos</span></h1>
+    <p>O studyflow ajuda estudantes a criar cronogramas inteligentes, acompanhar seu progresso e desenvolver os hábitos que constroem um futuro acadêmico sólido.</p>
+    <div class="hero-cta">
+      <button class="btn-lg btn-lg-cyan" onclick="showPage('page-register')">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+        criar conta grátis
+      </button>
+      <button class="btn-lg btn-lg-outline" onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'})">ver como funciona</button>
+    </div>
+  </section>
+
+  <section class="section" id="features">
+    <div class="section-inner">
+      <p class="section-tag">funcionalidades</p>
+      <h2 class="section-title">o que o studyflow proporciona?</h2>
+      <p class="section-sub">Ferramentas pensadas para estudantes que levam o aprendizado a sério.</p>
+      <div class="features-grid">
+        <div class="feature-card fade-up">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+          <h3>cronogramas personalizados</h3>
+          <p>Monte seu plano de estudos de acordo com seus objetivos, disponibilidade e nível de dificuldade de cada matéria. Simples, visual e eficiente.</p>
+        </div>
+        <div class="feature-card fade-up" style="transition-delay:.08s">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+          <h3>acompanhamento de progresso</h3>
+          <p>Visualize quanto você avançou em cada disciplina, identifique pontos de atenção e celebre cada meta concluída ao longo da jornada.</p>
+        </div>
+        <div class="feature-card fade-up" style="transition-delay:.16s">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <h3>comunidade &amp; grupos de estudo</h3>
+          <p>Crie ou entre em grupos por tema, compartilhe estratégias e estude junto com quem está na mesma jornada que você.</p>
+        </div>
+        <div class="feature-card fade-up" style="transition-delay:.24s">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+          <h3>streaks, títulos e conquistas</h3>
+          <p>Mantenha uma sequência de dias estudando e desbloqueie títulos exclusivos que mostram sua dedicação para a comunidade.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section benefits">
+    <div class="section-inner">
+      <p class="section-tag">impacto real</p>
+      <h2 class="section-title">juntos podemos impulsionar<br>o seu futuro acadêmico</h2>
+      <p class="section-sub">Resultados que estudantes que usam o studyflow já estão conquistando.</p>
+      <div class="benefits-grid fade-up">
+        <div class="benefit"><div class="benefit-num">+40%</div><div class="benefit-label">produtividade</div><p class="benefit-desc">Rendimento superior em menos tempo de estudo.</p></div>
+        <div class="benefit"><div class="benefit-num">3×</div><div class="benefit-label">mais consistência</div><p class="benefit-desc">Cronogramas criam hábito de estudar todos os dias.</p></div>
+        <div class="benefit"><div class="benefit-num">92%</div><div class="benefit-label">satisfação</div><p class="benefit-desc">A maioria recomendaria o studyflow a um amigo.</p></div>
+        <div class="benefit"><div class="benefit-num">24/7</div><div class="benefit-label">disponível sempre</div><p class="benefit-desc">Acesse em qualquer dispositivo, quando precisar.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <p class="section-tag">como funciona</p>
+      <h2 class="section-title">o studyflow ajuda você a desenvolver:</h2>
+      <p class="section-sub">Um processo simples para resultados consistentes.</p>
+      <div class="steps fade-up">
+        <div class="step"><div class="step-num">1</div><h4>foco e disciplina</h4><p>Crie blocos de estudo com o método que mais funciona para você — Pomodoro, blocos fixos ou fluxo livre.</p></div>
+        <div class="step"><div class="step-num">2</div><h4>organização e clareza</h4><p>Saiba exatamente o que estudar hoje, amanhã e na semana. Sem ansiedade, sem improvisação.</p></div>
+        <div class="step"><div class="step-num">3</div><h4>consistência a longo prazo</h4><p>Hábitos sólidos se constroem com o tempo. O studyflow te acompanha do início até a conquista do seu objetivo.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <h2>junte-se a nós nessa jornada!</h2>
+    <p>Crie sua conta gratuitamente e comece a organizar seus estudos hoje mesmo.</p>
+    <button class="btn-lg btn-lg-cyan" onclick="showPage('page-register')">criar conta</button>
+  </section>
+
+  <footer>
+    <div class="footer-logo">study<span class="flow">flow</span></div>
+    <div class="footer-credits">
+      <p>site desenvolvido por:</p>
+      <div class="footer-devs">
+        <div class="dev-card">Júlia Maria</div>
+        <div class="dev-card">Vinicius Leal</div>
+        <div class="dev-card">Gabriel Silva</div>
+      </div>
+    </div>
+    <span style="font-size:0.78rem;color:var(--white-dim)">© 2026 studyflow</span>
+  </footer>
+</div>
+
+
+<div id="page-login" class="page">
+  <div class="auth-wrap">
+    <div class="auth-box">
+      <div class="auth-back" onclick="showPage('page-landing')">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        voltar ao início
+      </div>
+      <div class="auth-logo"><span>study<span class="flow">flow</span></span></div>
+      <h2>entrar na sua conta</h2>
+      <p class="auth-sub">Bem-vindo de volta! Continue de onde parou.</p>
+
+      <div class="field">
+        <label>e-mail</label>
+        <input type="email" id="login-email" placeholder="seu@email.com" />
+      </div>
+      <div class="field">
+        <label>senha</label>
+        <input type="password" id="login-pass" placeholder="••••••••" />
+      </div>
+      <div style="text-align:right;margin-bottom:20px">
+        <a style="font-size:0.8rem;color:var(--cyan);cursor:pointer;text-decoration:none">esqueci minha senha</a>
+      </div>
+      <button class="auth-btn" onclick="doLogin()">entrar</button>
+
+      <div class="auth-divider"><span>ou</span></div>
+
+      <button class="btn-google" onclick="loginWithGoogle()">
+        <svg viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.97 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+        entrar com o Google
+      </button>
+
+      <div class="auth-switch">
+        não possui uma conta ainda? <a onclick="showPage('page-register')">cadastro</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="page-register" class="page">
+  <div class="auth-wrap">
+    <div class="auth-box" style="max-width:460px">
+      <div class="auth-back" onclick="showPage('page-landing')">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        voltar ao início
+      </div>
+      <div class="auth-logo"><span>study<span class="flow">flow</span></span></div>
+      <h2>criar sua conta</h2>
+      <p class="auth-sub">Gratuito para sempre. Sem cartão de crédito.</p>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <div class="field">
+          <label>nome</label>
+          <input type="text" id="reg-nome" placeholder="João" />
+        </div>
+        <div class="field">
+          <label>sobrenome</label>
+          <input type="text" id="reg-sobrenome" placeholder="Silva" />
+        </div>
+      </div>
+      <div class="field">
+        <label>nome de usuário</label>
+        <input type="text" id="reg-username" placeholder="@joaosilva" />
+      </div>
+      <div class="field">
+        <label>e-mail</label>
+        <input type="email" id="reg-email" placeholder="seu@email.com" />
+      </div>
+      <div class="field">
+        <label>senha</label>
+        <input type="password" id="reg-senha" placeholder="mínimo 6 caracteres" />
+      </div>
+      <div class="field">
+        <label>confirmar senha</label>
+        <input type="password" id="reg-confirmar" placeholder="repita sua senha" />
+      </div>
+
+      <div class="field">
+        <label>dias disponíveis para estudar</label>
+        <div class="pill-group" id="reg-days">
+          <div class="pill" onclick="togglePill(this)">dom</div>
+          <div class="pill selected" onclick="togglePill(this)">seg</div>
+          <div class="pill selected" onclick="togglePill(this)">ter</div>
+          <div class="pill selected" onclick="togglePill(this)">qua</div>
+          <div class="pill selected" onclick="togglePill(this)">qui</div>
+          <div class="pill selected" onclick="togglePill(this)">sex</div>
+          <div class="pill" onclick="togglePill(this)">sáb</div>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>horário disponível</label>
+        <div class="time-range">
+          <input type="time" id="reg-horario-ini" value="08:00" />
+          <span>até</span>
+          <input type="time" id="reg-horario-fim" value="12:00" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label>matérias</label>
+        <div class="pill-group" id="reg-subjects">
+          <div class="pill selected" onclick="togglePill(this)">matemática</div>
+          <div class="pill" onclick="togglePill(this)">física</div>
+          <div class="pill" onclick="togglePill(this)">química</div>
+          <div class="pill selected" onclick="togglePill(this)">biologia</div>
+          <div class="pill" onclick="togglePill(this)">história</div>
+          <div class="pill" onclick="togglePill(this)">geografia</div>
+          <div class="pill selected" onclick="togglePill(this)">português</div>
+          <div class="pill" onclick="togglePill(this)">inglês</div>
+          <div class="pill" onclick="togglePill(this)">redação</div>
+        </div>
+        <input type="text" id="reg-materia-outra" placeholder="outra matéria... (opcional)" style="margin-top:10px" />
+      </div>
+
+      <label class="checkbox-row">
+        <input type="checkbox" id="reg-notif" checked />
+        receber notificações de estudo
+      </label>
+
+      <button class="auth-btn" onclick="doRegister()">criar conta grátis</button>
+
+      <div class="auth-divider"><span>ou</span></div>
+
+      <button class="btn-google" onclick="loginWithGoogle()">
+        <svg viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.97 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+        continuar com o Google
+      </button>
+
+      <div class="auth-switch" style="margin-top:18px">
+        já tem uma conta? <a onclick="showPage('page-login')">entrar</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- APP (shared sidebar)                       -->
+<!-- ═══════════════════════════════════════════ -->
+
+<!-- APP: INÍCIO -->
+<div id="page-app-inicio" class="page-app">
+  <aside class="app-sidebar">
+    <div class="sidebar-logo">study<br><span style="color:var(--white)">flow</span></div>
+    <button class="sidebar-btn active" title="Início">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-5H9v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+    </button>
+    <button class="sidebar-btn" title="Estudo" onclick="goApp('estudo')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+    </button>
+    <button class="sidebar-btn" title="Dicas" onclick="goApp('dicas')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+    </button>
+    <button class="sidebar-btn" title="Chat" onclick="goApp('chat')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    </button>
+    <button class="sidebar-btn" title="Conquistas" onclick="goApp('conquistas')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+    </button>
+    <div class="sidebar-spacer"></div>
+    <button class="sidebar-btn" title="Perfil" onclick="goApp('perfil')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    </button>
+    <button class="sidebar-btn" title="Configurações" onclick="goApp('config')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+    </button>
+    <button class="sidebar-btn" title="Sair" onclick="logout()" style="margin-bottom:8px">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+    </button>
+  </aside>
+  <div class="app-main">
+    <div class="app-header">
+      <div>
+        <div class="page-title">início</div>
+        <div class="page-sub">seu painel de estudos</div>
+      </div>
+      <div class="app-header-right">
+        <div class="streak-badge">7 dias</div>
+        <div class="avatar-sm" onclick="goApp('perfil')">J</div>
+      </div>
+    </div>
+    <div class="inicio-container">
+
+      <div class="greeting-card">
+        <div>
+          <h2 id="greeting-title">Olá!</h2>
+          <p id="greeting-sub">Continue assim para alcançar seus objetivos!</p>
+        </div>
+        <button class="btn-lg btn-lg-cyan" onclick="goApp('estudo')">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          iniciar sessão de estudo
+        </button>
+      </div>
+
+      <div class="dash-stats-row" id="dash-stats-row"></div>
+
+      <div class="schedule-card">
+        <h3>seu cronograma da semana</h3>
+        <p class="sub">baseado nas matérias e dias escolhidos no seu cadastro</p>
+        <div class="schedule-grid" id="schedule-grid"></div>
+        <div class="schedule-legend">
+          <span><span class="legend-dot" style="background:rgba(80,200,120,0.4)"></span> feito</span>
+          <span><span class="legend-dot" style="background:rgba(154,163,187,0.3)"></span> ainda por vir</span>
+          <span><span class="legend-dot" style="background:rgba(232,93,74,0.4)"></span> não finalizado</span>
+        </div>
+      </div>
+
+      <div class="schedule-card">
+        <h3 id="today-card-title">hoje</h3>
+        <p class="sub">seus blocos de estudo programados para hoje</p>
+        <div class="today-list" id="today-list"></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- APP: DICAS -->
+<div id="page-app-dicas" class="page-app">
+  <aside class="app-sidebar">
+    <div class="sidebar-logo">study<br><span style="color:var(--white)">flow</span></div>
+    <button class="sidebar-btn" title="Início" onclick="goApp('inicio')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-5H9v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+    </button>
+    <button class="sidebar-btn" title="Estudo" onclick="goApp('estudo')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+    </button>
+    <button class="sidebar-btn active" title="Dicas">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+    </button>
+    <button class="sidebar-btn" title="Chat" onclick="goApp('chat')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    </button>
+    <button class="sidebar-btn" title="Conquistas" onclick="goApp('conquistas')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+    </button>
+    <div class="sidebar-spacer"></div>
+    <button class="sidebar-btn" title="Perfil" onclick="goApp('perfil')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    </button>
+    <button class="sidebar-btn" title="Configurações" onclick="goApp('config')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+    </button>
+    <button class="sidebar-btn" title="Sair" onclick="logout()" style="margin-bottom:8px">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+    </button>
+  </aside>
+  <div class="app-main">
+    <div class="app-header">
+      <div>
+        <div class="page-title">dicas de estudo</div>
+        <div class="page-sub">aprenda com as melhores técnicas de aprendizado</div>
+      </div>
+      <div class="app-header-right">
+        <div class="streak-badge">7 dias</div>
+        <div class="avatar-sm" onclick="goApp('perfil')">J</div>
+      </div>
+    </div>
+    <div class="tips-container">
+      <div class="tips-grid">
+
+        <div class="tip-card" onclick="toggleTip(this)">
+          <div class="tip-tag foco">foco</div>
+          <h3>Técnica Pomodoro</h3>
+          <p>Estude em blocos de 25 minutos com pausas de 5. Após 4 ciclos, descanse 15–30 minutos.</p>
+          <div class="tip-card-full">
+            <p>A técnica Pomodoro foi desenvolvida por Francesco Cirillo no fim dos anos 80. O segredo está na <strong>urgência controlada</strong>: sabendo que você tem apenas 25 minutos, seu cérebro entra em modo de foco total. Durante a pausa, resista à tentação de checar o celular — levante, respire, mexa-se. Após 4 pomodoros, você terá estudado por 100 minutos com máxima eficiência.</p>
+            <br><p><strong>Como aplicar:</strong> Escolha uma única tarefa → programe 25 min → trabalhe sem interrupções → faça uma pausa curta → repita.</p>
+          </div>
+        </div>
+
+        <div class="tip-card" onclick="toggleTip(this)">
+          <div class="tip-tag memoria">memória</div>
+          <h3>Repetição Espaçada</h3>
+          <p>Revise o conteúdo em intervalos crescentes (1 dia, 3 dias, 1 semana…) para fixar na memória de longo prazo.</p>
+          <div class="tip-card-full">
+            <p>Nosso cérebro esquece em curva exponencial (Curva de Ebbinghaus). A repetição espaçada combate isso revisando o conteúdo <strong>no momento exato em que você está prestes a esquecer</strong>. Ferramentas como Anki automatizam isso.</p>
+            <br><p><strong>Intervalos recomendados:</strong> Revisar no dia seguinte → 3 dias depois → 1 semana → 2 semanas → 1 mês.</p>
+          </div>
+        </div>
+
+        <div class="tip-card" onclick="toggleTip(this)">
+          <div class="tip-tag tempo">tempo</div>
+          <h3>Blocos de Estudo Fixos</h3>
+          <p>Defina horários específicos para estudar todo dia. A consistência supera a intensidade esporádica.</p>
+          <div class="tip-card-full">
+            <p>Estudar no mesmo horário todo dia cria um <strong>hábito automático</strong>. Seu cérebro começa a se preparar para o aprendizado antes mesmo de você abrir o livro. Comece com apenas 30 minutos por dia se necessário — consistência é tudo.</p>
+            <br><p><strong>Dica bônus:</strong> Prepare seu material de estudo na noite anterior para eliminar a fricção de começar.</p>
+          </div>
+        </div>
+
+        <div class="tip-card" onclick="toggleTip(this)">
+          <div class="tip-tag saude">saúde</div>
+          <h3>Sono e Aprendizado</h3>
+          <p>O sono consolida a memória. Estudar até tarde prejudica mais do que ajuda na maioria dos casos.</p>
+          <div class="tip-card-full">
+            <p>Durante o sono, especialmente na fase REM, o cérebro <strong>transfere informações da memória de curto para longo prazo</strong>. Dormir pouco após estudar pode apagar até 40% do que foi aprendido. 7–9 horas são o ideal para estudantes.</p>
+            <br><p><strong>Estratégia:</strong> Revise brevemente o que estudou antes de dormir — isso potencializa a consolidação noturna.</p>
+          </div>
+        </div>
+
+        <div class="tip-card" onclick="toggleTip(this)">
+          <div class="tip-tag memoria">memória</div>
+          <h3>Método Feynman</h3>
+          <p>Explique o conteúdo como se estivesse ensinando para uma criança. Se travar, você achou um gap no seu conhecimento.</p>
+          <div class="tip-card-full">
+            <p>Richard Feynman, físico vencedor do Nobel, tinha um método simples: se você não consegue explicar algo de forma simples, é porque não entendeu de verdade. Ao tentar simplificar, seu cérebro identifica as lacunas do conhecimento.</p>
+            <br><p><strong>Como fazer:</strong> Escreva o conceito em linguagem simples → identifique onde trava → volte ao material → repita até conseguir explicar sem consultar.</p>
+          </div>
+        </div>
+
+        <div class="tip-card" onclick="toggleTip(this)">
+          <div class="tip-tag foco">foco</div>
+          <h3>Ambiente de Estudos</h3>
+          <p>Seu ambiente impacta diretamente sua concentração. Organize o espaço antes de começar.</p>
+          <div class="tip-card-full">
+            <p>O cérebro associa locais a comportamentos. Um ambiente organizado e dedicado ao estudo <strong>ativa automaticamente o modo foco</strong>. Luz natural, temperatura confortável e ausência de distrações visuais aumentam a produtividade em até 30%.</p>
+            <br><p><strong>Checklist:</strong> Mesa limpa ✓ Celular virado/silenciado ✓ Água à mão ✓ Fones com ruído branco (opcional) ✓</p>
+          </div>
+        </div>
+
+        <div class="tip-card" onclick="toggleTip(this)">
+          <div class="tip-tag tempo">tempo</div>
+          <h3>Regra dos 2 Minutos</h3>
+          <p>Se uma tarefa de estudo leva menos de 2 minutos para começar, comece agora — não deixe acumular.</p>
+          <div class="tip-card-full">
+            <p>Muita procrastinação vem do tamanho "imaginário" da tarefa. Ao se comprometer a fazer só os primeiros 2 minutos (abrir o caderno, ler o primeiro parágrafo), você quebra a resistência inicial. Na maioria das vezes, depois desses 2 minutos você continua naturalmente.</p>
+            <br><p><strong>Como aplicar:</strong> Liste suas pendências → para cada uma, pergunte "consigo começar em 2 min?" → comece pela mais simples primeiro.</p>
+          </div>
+        </div>
+
+        <div class="tip-card" onclick="toggleTip(this)">
+          <div class="tip-tag memoria">memória</div>
+          <h3>Mapas Mentais</h3>
+          <p>Organize ideias visualmente em torno de um tema central. Ótimo para conectar conceitos e revisar rápido.</p>
+          <div class="tip-card-full">
+            <p>Mapas mentais aproveitam a forma como o cérebro associa informações — por <strong>conexões e hierarquias</strong>, não em listas lineares. Eles ajudam a visualizar o "todo" de um assunto e identificar relações entre subtemas que passariam despercebidas em anotações tradicionais.</p>
+            <br><p><strong>Como fazer:</strong> Escreva o tema central no meio da folha → crie ramos para subtemas → use cores, ícones e palavras-chave curtas em cada ramo.</p>
+          </div>
+        </div>
+
+        <div class="tip-card" onclick="toggleTip(this)">
+          <div class="tip-tag saude">saúde</div>
+          <h3>Pausas Ativas</h3>
+          <p>Levante, alongue-se ou caminhe um pouco durante as pausas. Isso recarrega seu foco melhor do que o celular.</p>
+          <div class="tip-card-full">
+            <p>Ficar sentado por longos períodos reduz o fluxo sanguíneo para o cérebro. Pausas ativas — caminhar, alongar, beber água — <strong>restauram a energia mental</strong> de verdade, enquanto rolar redes sociais mantém o cérebro em estímulo constante e dificulta voltar ao foco.</p>
+            <br><p><strong>Sugestão:</strong> A cada pausa, levante da cadeira por pelo menos 1 minuto antes de pensar em pegar o celular.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="page-app-estudo" class="page-app">
+  <aside class="app-sidebar">
+    <div class="sidebar-logo">study<br><span style="color:var(--white)">flow</span></div>
+    <button class="sidebar-btn" title="Início" onclick="goApp('inicio')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-5H9v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+    </button>
+    <button class="sidebar-btn active" title="Estudo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+    </button>
+    <button class="sidebar-btn" title="Dicas" onclick="goApp('dicas')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+    </button>
+    <button class="sidebar-btn" title="Chat" onclick="goApp('chat')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    </button>
+    <button class="sidebar-btn" title="Conquistas" onclick="goApp('conquistas')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+    </button>
+    <div class="sidebar-spacer"></div>
+    <button class="sidebar-btn" title="Perfil" onclick="goApp('perfil')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    </button>
+    <button class="sidebar-btn" title="Configurações" onclick="goApp('config')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+    </button>
+    <button class="sidebar-btn" title="Sair" onclick="logout()" style="margin-bottom:8px">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+    </button>
+  </aside>
+  <div class="app-main">
+    <div class="app-header">
+      <div>
+        <div class="page-title">estudo</div>
+        <div class="page-sub">escolha um método e comece sua sessão de foco</div>
+      </div>
+      <div class="app-header-right">
+        <div class="streak-badge">7 dias</div>
+        <div class="avatar-sm" onclick="goApp('perfil')">J</div>
+      </div>
+    </div>
+    <div class="estudo-container">
+
+      <h3 style="font-size:1rem;font-weight:800;margin-bottom:4px">selecione um método de estudo</h3>
+      <p style="font-size:0.82rem;color:var(--white-dim)">cada técnica organiza seus blocos de foco e pausa de um jeito diferente</p>
+
+      <div class="method-grid">
+        <div class="method-card selected" onclick="selectMethod('pomodoro', this)">
+          <h4>Pomodoro Clássico</h4>
+          <p>25 min de foco + 5 min de pausa. Ideal para manter a concentração em tarefas curtas.</p>
+        </div>
+        <div class="method-card" onclick="selectMethod('pomodoroLongo', this)">
+          <h4>Pomodoro Longo</h4>
+          <p>50 min de foco + 10 min de pausa. Para quem já tem mais resistência de concentração.</p>
+        </div>
+        <div class="method-card" onclick="selectMethod('flowtime', this)">
+          <h4>Foco Profundo (52/17)</h4>
+          <p>52 min de foco + 17 min de pausa. Baseado em estudos sobre picos de produtividade.</p>
+        </div>
+        <div class="method-card" onclick="selectMethod('livre', this)">
+          <h4>Estudo Livre</h4>
+          <p>Cronômetro de 60 min sem pausas fixas — estude no seu próprio ritmo.</p>
+        </div>
+      </div>
+
+      <div class="timer-wrap">
+        <div class="timer-circle" id="timer-circle">
+          <div class="timer-display" id="timer-display">25:00</div>
+          <div class="timer-phase" id="timer-phase">foco</div>
+        </div>
+        <div class="timer-controls">
+          <button class="timer-btn" onclick="resetTimer()">reiniciar</button>
+          <button class="timer-btn primary" id="timer-btn-toggle" onclick="toggleTimer()">iniciar</button>
+          <button class="timer-btn" onclick="skipTimer()">pular</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div id="page-app-chat" class="page-app">
+  <aside class="app-sidebar">
+    <div class="sidebar-logo">study<br><span style="color:var(--white)">flow</span></div>
+    <button class="sidebar-btn" title="Início" onclick="goApp('inicio')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-5H9v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+    </button>
+    <button class="sidebar-btn" title="Estudo" onclick="goApp('estudo')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+    </button>
+    <button class="sidebar-btn" title="Dicas" onclick="goApp('dicas')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+    </button>
+    <button class="sidebar-btn active" title="Chat">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    </button>
+    <button class="sidebar-btn" title="Conquistas" onclick="goApp('conquistas')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+    </button>
+    <div class="sidebar-spacer"></div>
+    <button class="sidebar-btn" title="Perfil" onclick="goApp('perfil')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    </button>
+    <button class="sidebar-btn" title="Configurações" onclick="goApp('config')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+    </button>
+    <button class="sidebar-btn" title="Sair" onclick="logout()" style="margin-bottom:8px">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+    </button>
+  </aside>
+  <div class="app-main chat-main" style="flex-direction:row">
+
+    <div class="chat-sidebar">
+      <div class="chat-sidebar-header">
+        <h3>mensagens</h3>
+        <div style="display:flex;gap:6px">
+          <button class="icon-btn" onclick="openDiscoverModal()" title="Descobrir grupos" style="width:30px;height:30px">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </button>
+          <button class="icon-btn" onclick="openModal('modal-create-group')" title="Criar grupo" style="width:30px;height:30px">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="chat-search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input placeholder="buscar conversa..." />
+      </div>
+      <div class="chat-tabs">
+        <div class="chat-tab active" onclick="switchTab(this,'grupos')">grupos</div>
+        <div class="chat-tab" onclick="switchTab(this,'direto')">direto</div>
+      </div>
+
+     
+      <div id="join-req" style="display:none"></div>
+
+      <div class="chat-list" id="groups-tab">
+        <div style="padding:20px;text-align:center;color:var(--white-dim);font-size:0.82rem">carregando grupos...</div>
+      </div>
+
+      <div class="chat-list" id="direto-tab" style="display:none">
+        <div style="padding:24px 16px;text-align:center;color:var(--white-dim);font-size:0.82rem">carregando conversas...</div>
+      </div>
+    </div>
+
+
+    <div class="chat-area">
+      <div class="chat-area-header" id="chat-header">
+        <div class="chat-avatar group" style="background:linear-gradient(135deg,#00C6C6,#0080A0);border-radius:12px" id="chat-hdr-avatar">?</div>
+        <div class="chat-area-info">
+          <div class="chat-area-name" id="chat-hdr-name">selecione um grupo</div>
+          <div class="chat-area-sub" id="chat-hdr-sub">ou crie um novo para começar a conversar</div>
+        </div>
+        <div class="chat-area-actions">
+          <button class="icon-btn" onclick="toggleGroupPanel()" title="Ver membros">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </button>
+          <button class="icon-btn" title="Pesquisar mensagens" onclick="toggleMsgSearch()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="chat-search" id="msg-search-bar" style="display:none;margin:0;border-radius:0;border-bottom:1px solid var(--border)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input id="msg-search-input" placeholder="pesquisar nas mensagens..." oninput="filterMessages(this.value)" />
+      </div>
+
+      <div class="messages-wrap" id="messages-area">
+        <div style="text-align:center;color:var(--white-dim);font-size:0.85rem;padding:30px">
+          Selecione um grupo na lista à esquerda, ou clique em 🔍 para descobrir novos grupos, ou em ➕ para criar o seu.
+        </div>
+      </div>
+
+      <div class="chat-input-wrap">
+        <input class="chat-input" id="msg-input" placeholder="escreva uma mensagem..." onkeydown="if(event.key==='Enter')sendMsg()" />
+        <button class="chat-send" onclick="sendMsg()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+      </div>
+    </div>
+
+    
+    <div class="group-panel" id="group-panel" style="display:none">
+      <div class="group-info-card">
+        <h5 id="gi-nome">—</h5>
+        <p id="gi-desc"></p>
+        <span class="group-badge pub" id="gi-badge"></span>
+        <div id="gi-code"></div>
+      </div>
+      <h4 id="gi-membros-title">membros</h4>
+      <div id="member-list"></div>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="page-app-conquistas" class="page-app">
+  <aside class="app-sidebar">
+    <div class="sidebar-logo">study<br><span style="color:var(--white)">flow</span></div>
+    <button class="sidebar-btn" title="Início" onclick="goApp('inicio')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-5H9v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+    </button>
+    <button class="sidebar-btn" title="Estudo" onclick="goApp('estudo')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+    </button>
+    <button class="sidebar-btn" title="Dicas" onclick="goApp('dicas')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+    </button>
+    <button class="sidebar-btn" title="Chat" onclick="goApp('chat')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    </button>
+    <button class="sidebar-btn active" title="Conquistas">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+    </button>
+    <div class="sidebar-spacer"></div>
+    <button class="sidebar-btn" title="Perfil" onclick="goApp('perfil')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    </button>
+    <button class="sidebar-btn" title="Configurações" onclick="goApp('config')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+    </button>
+    <button class="sidebar-btn" title="Sair" onclick="logout()" style="margin-bottom:8px">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+    </button>
+  </aside>
+  <div class="app-main">
+    <div class="app-header">
+      <div>
+        <div class="page-title">conquistas & streak</div>
+        <div class="page-sub">mantenha sua sequência e desbloqueie títulos exclusivos</div>
+      </div>
+      <div class="app-header-right">
+        <div class="streak-badge">7 dias</div>
+        <div class="avatar-sm" onclick="goApp('perfil')">J</div>
+      </div>
+    </div>
+    <div class="conquistas-container">
+
+      <!-- STREAK HERO -->
+      <div class="streak-hero">
+        
+        <div class="streak-count" id="conq-streak-count">0</div>
+        <div class="streak-label">dias seguidos estudando</div>
+        <div class="streak-days-row" id="conq-streak-days"></div>
+        <div style="margin-top:16px;font-size:0.82rem;color:var(--white-dim)" id="conq-streak-msg">Continue estudando hoje para manter sua sequência! 💪</div>
+      </div>
+
+     
+      <div class="titles-section">
+        <h3>títulos</h3>
+        <div class="titles-grid" id="conq-titles-grid"></div>
+      </div>
+
+     
+      <div class="achievements-section">
+        <h3>conquistas</h3>
+        <div class="achievement-list" id="conq-achievements-list"></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div id="page-app-perfil" class="page-app">
+  <aside class="app-sidebar">
+    <div class="sidebar-logo">study<br><span style="color:var(--white)">flow</span></div>
+    <button class="sidebar-btn" title="Início" onclick="goApp('inicio')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-5H9v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+    </button>
+    <button class="sidebar-btn" title="Estudo" onclick="goApp('estudo')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+    </button>
+    <button class="sidebar-btn" title="Dicas" onclick="goApp('dicas')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+    </button>
+    <button class="sidebar-btn" title="Chat" onclick="goApp('chat')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    </button>
+    <button class="sidebar-btn" title="Conquistas" onclick="goApp('conquistas')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+    </button>
+    <div class="sidebar-spacer"></div>
+    <button class="sidebar-btn active" title="Perfil">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    </button>
+    <button class="sidebar-btn" title="Configurações" onclick="goApp('config')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+    </button>
+    <button class="sidebar-btn" title="Sair" onclick="logout()" style="margin-bottom:8px">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+    </button>
+  </aside>
+  <div class="app-main">
+    <div class="app-header">
+      <div>
+        <div class="page-title">👤 meu perfil</div>
+        <div class="page-sub">gerencie suas informações e acompanhe seu progresso</div>
+      </div>
+      <div class="app-header-right">
+        <div class="streak-badge">7 dias</div>
+      </div>
+    </div>
+    <div class="profile-container">
+      <div class="profile-cover">
+        <div class="profile-big-avatar" id="profile-avatar">J</div>
+        <div class="profile-cover-info">
+          <div class="profile-cover-name" id="profile-name">João Silva</div>
+          <div class="profile-cover-handle" id="profile-handle">@joaosilva</div>
+          <div class="profile-cover-title" id="profile-title-badge" style="background:rgba(0,198,198,0.12);color:var(--cyan);border:1px solid rgba(0,198,198,0.3)">🌱 Calouro</div>
+        </div>
+        <button class="edit-profile-btn" onclick="openEditProfile()">editar perfil</button>
+      </div>
+
+      <div class="profile-stats-row">
+        <div class="profile-stat-card"><div class="num" id="profile-stat-streak">0</div><div class="lbl">🔥 streak atual</div></div>
+        <div class="profile-stat-card"><div class="num" id="profile-stat-dias">0</div><div class="lbl">📅 dias estudados</div></div>
+        <div class="profile-stat-card"><div class="num" id="profile-stat-grupos">0</div><div class="lbl">👥 grupos</div></div>
+        <div class="profile-stat-card"><div class="num" id="profile-stat-conquistas">0</div><div class="lbl">🏆 conquistas</div></div>
+      </div>
+
+      <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:16px;padding:24px;margin-bottom:16px">
+        <h3 style="font-size:0.9rem;font-weight:800;margin-bottom:16px">sobre mim</h3>
+        <p style="font-size:0.86rem;color:var(--white-dim);line-height:1.7" id="profile-bio">conte um pouco sobre você em "editar perfil" </p>
+        <div style="margin-top:14px;display:flex;flex-wrap:wrap;gap:8px" id="profile-subjects"></div>
+      </div>
+
+      <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:16px;padding:24px">
+        <h3 style="font-size:0.9rem;font-weight:800;margin-bottom:16px">títulos desbloqueados</h3>
+        <div style="display:flex;gap:10px;flex-wrap:wrap" id="profile-titles"></div>
+        <div style="margin-top:12px">
+          <button onclick="goApp('conquistas')" style="background:transparent;border:none;color:var(--cyan);font-size:0.82rem;cursor:pointer;font-weight:600">ver todas as conquistas →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="page-app-config" class="page-app">
+  <aside class="app-sidebar">
+    <div class="sidebar-logo">study<br><span style="color:var(--white)">flow</span></div>
+    <button class="sidebar-btn" title="Início" onclick="goApp('inicio')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-5H9v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+    </button>
+    <button class="sidebar-btn" title="Estudo" onclick="goApp('estudo')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+    </button>
+    <button class="sidebar-btn" title="Dicas" onclick="goApp('dicas')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+    </button>
+    <button class="sidebar-btn" title="Chat" onclick="goApp('chat')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    </button>
+    <button class="sidebar-btn" title="Conquistas" onclick="goApp('conquistas')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+    </button>
+    <div class="sidebar-spacer"></div>
+    <button class="sidebar-btn" title="Perfil" onclick="goApp('perfil')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    </button>
+    <button class="sidebar-btn active" title="Configurações">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+    </button>
+    <button class="sidebar-btn" title="Sair" onclick="logout()" style="margin-bottom:8px">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+    </button>
+  </aside>
+  <div class="app-main">
+    <div class="app-header">
+      <div>
+        <div class="page-title">⚙️ configurações</div>
+        <div class="page-sub">ajuste preferências da sua conta</div>
+      </div>
+      <div class="app-header-right">
+        <div class="streak-badge">7 dias</div>
+        <div class="avatar-sm" onclick="goApp('perfil')">J</div>
+      </div>
+    </div>
+    <div class="config-container">
+
+      <div class="config-card">
+        <div class="config-row">
+          <div class="config-row-text">
+            <strong>notificações</strong>
+            <span>receba lembretes sobre seus blocos de estudo agendados</span>
+          </div>
+          <label class="toggle-switch">
+            <input type="checkbox" id="cfg-notif" onchange="updateConfig('notificacoes', this.checked)" />
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+        <div class="config-row">
+          <div class="config-row-text">
+            <strong>filtrar palavras ofensivas</strong>
+            <span>oculta automaticamente linguagem ofensiva nos chats e grupos</span>
+          </div>
+          <label class="toggle-switch">
+            <input type="checkbox" id="cfg-filtro" onchange="updateConfig('filtroPalavroes', this.checked)" />
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+        <div class="config-row">
+          <div class="config-row-text">
+            <strong>🌙 modo escuro</strong>
+            <span>alterne entre o tema escuro e o tema claro</span>
+          </div>
+          <label class="toggle-switch">
+            <input type="checkbox" id="cfg-modo-escuro" onchange="updateConfig('modoEscuro', this.checked)" />
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="config-card" style="padding:18px 24px">
+        <div class="config-row-text" style="margin-bottom:14px">
+          <strong>🗑️ histórico de conversas</strong>
+          <span>remove permanentemente todas as suas mensagens em chats e grupos</span>
+        </div>
+        <button class="danger-btn" onclick="confirmDeleteHistory()">excluir histórico</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="modal-overlay" id="modal-create-group">
+  <div class="modal-box">
+    <h2>criar novo grupo</h2>
+    <p class="modal-sub">Configure seu grupo de estudos e comece a estudar junto!</p>
+
+    <div class="field">
+      <label>nome do grupo</label>
+      <input type="text" id="group-name" placeholder="ex: ENEM 2025 — Matemática" />
+    </div>
+    <div class="field">
+      <label>sobre o grupo</label>
+      <input type="text" id="group-desc" placeholder="Breve descrição do tema ou objetivo..." />
+    </div>
+    <div class="field">
+      <label>visibilidade</label>
+      <div class="radio-group">
+        <div class="radio-opt selected" id="opt-pub" onclick="selectOpt('pub')">
+          
+          <strong>Público</strong>
+          <span>qualquer um pode entrar</span>
+        </div>
+        <div class="radio-opt" id="opt-priv" onclick="selectOpt('priv')">
+          
+          <strong>Privado</strong>
+          <span>apenas com convite</span>
+        </div>
+        <div class="radio-opt" id="opt-req" onclick="selectOpt('req')">
+          
+          <strong>Pedido</strong>
+          <span>entrar com aprovação</span>
+        </div>
+      </div>
+    </div>
+    <div class="field">
+      <label>assunto / matéria</label>
+      <input type="text" id="group-subject" placeholder="ex: Matemática, Física, Redação..." />
+    </div>
+    <div class="modal-actions">
+      <button class="modal-cancel" onclick="closeModal('modal-create-group')">cancelar</button>
+      <button class="modal-confirm" onclick="createGroup()">criar grupo</button>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal-overlay" id="modal-discover">
+  <div class="modal-box">
+    <h2>descobrir grupos</h2>
+    <p class="modal-sub">Encontre grupos públicos ou peça para entrar em grupos com aprovação.</p>
+    <div id="discover-list" style="display:flex;flex-direction:column;gap:10px;max-height:300px;overflow-y:auto"></div>
+    <div class="field" style="margin-top:20px;margin-bottom:6px">
+      <label>entrar com código de convite (grupo privado)</label>
+      <div style="display:flex;gap:8px">
+        <input type="text" id="join-code-input" placeholder="ex: AB12CD" style="text-transform:uppercase" />
+        <button class="modal-confirm" style="flex:0 0 auto;padding:0 18px" onclick="joinByCode()">entrar</button>
+      </div>
+    </div>
+    <div class="modal-actions">
+      <button class="modal-cancel" style="flex:1" onclick="closeModal('modal-discover')">fechar</button>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal-overlay" id="modal-edit-profile">
+  <div class="modal-box">
+    <h2>editar perfil</h2>
+    <p class="modal-sub">essas informações são usadas para montar seu cronograma e seu perfil público.</p>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <div class="field">
+        <label>nome</label>
+        <input type="text" id="ep-nome" placeholder="João" />
+      </div>
+      <div class="field">
+        <label>sobrenome</label>
+        <input type="text" id="ep-sobrenome" placeholder="Silva" />
+      </div>
+    </div>
+    <div class="field">
+      <label>nome de usuário</label>
+      <input type="text" id="ep-username" placeholder="@joaosilva" />
+    </div>
+    <div class="field">
+      <label>sobre mim</label>
+      <textarea id="ep-bio" rows="3" placeholder="conte um pouco sobre você, seus objetivos..." style="width:100%;resize:vertical;font-family:inherit;background:var(--bg-card2);border:1px solid var(--border);border-radius:10px;padding:11px 14px;color:var(--white);font-size:0.9rem"></textarea>
+    </div>
+
+    <div class="field">
+      <label>dias de estudo</label>
+      <div class="pill-group" id="ep-days">
+        <div class="pill" onclick="togglePill(this)">dom</div>
+        <div class="pill" onclick="togglePill(this)">seg</div>
+        <div class="pill" onclick="togglePill(this)">ter</div>
+        <div class="pill" onclick="togglePill(this)">qua</div>
+        <div class="pill" onclick="togglePill(this)">qui</div>
+        <div class="pill" onclick="togglePill(this)">sex</div>
+        <div class="pill" onclick="togglePill(this)">sáb</div>
+      </div>
+    </div>
+
+    <div class="field">
+      <label>horário de estudo</label>
+      <div class="time-range">
+        <input type="time" id="ep-horario-ini" />
+        <span>até</span>
+        <input type="time" id="ep-horario-fim" />
+      </div>
+    </div>
+
+    <div class="field">
+      <label>matérias</label>
+      <div class="pill-group" id="ep-subjects">
+        <div class="pill" onclick="togglePill(this)">matemática</div>
+        <div class="pill" onclick="togglePill(this)">física</div>
+        <div class="pill" onclick="togglePill(this)">química</div>
+        <div class="pill" onclick="togglePill(this)">biologia</div>
+        <div class="pill" onclick="togglePill(this)">história</div>
+        <div class="pill" onclick="togglePill(this)">geografia</div>
+        <div class="pill" onclick="togglePill(this)">português</div>
+        <div class="pill" onclick="togglePill(this)">inglês</div>
+        <div class="pill" onclick="togglePill(this)">redação</div>
+      </div>
+      <input type="text" id="ep-materia-outra" placeholder="outra matéria... (opcional)" style="margin-top:10px" />
+    </div>
+
+    <div class="modal-actions">
+      <button class="modal-cancel" onclick="closeModal('modal-edit-profile')">cancelar</button>
+      <button class="modal-confirm" onclick="saveProfile()">salvar alterações</button>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal-overlay" id="modal-profile">
+  <div class="modal-box" style="max-width:380px">
+    <div class="profile-modal-content">
+      <div class="profile-modal-avatar" id="pm-avatar">?</div>
+      <div class="profile-modal-name" id="pm-name">—</div>
+      <div class="profile-modal-handle" id="pm-handle"></div>
+      <div class="profile-title-badge" id="pm-title" style="background:rgba(0,198,198,0.12);color:var(--cyan);border:1px solid rgba(0,198,198,0.3)">🌱 Calouro</div>
+      <div class="profile-stats">
+        <div class="profile-stat"><div class="profile-stat-num" id="pm-streak">0</div><div class="profile-stat-label">🔥 streak</div></div>
+        <div class="profile-stat"><div class="profile-stat-num" id="pm-grupos">0</div><div class="profile-stat-label">👥 grupos</div></div>
+        <div class="profile-stat"><div class="profile-stat-num" id="pm-conquistas">0</div><div class="profile-stat-label">🏆 conquistas</div></div>
+      </div>
+      <div id="pm-bio" style="font-size:0.82rem;color:var(--white-dim);margin:8px 0;text-align:center;display:none"></div>
+      <div class="profile-topics" id="pm-topics"></div>
+      <div style="margin-top:20px;display:flex;gap:10px">
+        <button class="modal-confirm" style="flex:1;padding:10px;border:none;border-radius:10px;cursor:pointer;font-weight:700;background:var(--cyan);color:#0F1320" id="pm-msg-btn" onclick="sendDMFromProfile()">enviar mensagem</button>
+        <button class="modal-cancel" style="padding:10px 16px;border:none;border-radius:10px;cursor:pointer;background:var(--bg-card2);color:var(--white-dim)" onclick="closeModal('modal-profile')">fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="toast" id="toast">
+  <div class="toast-icon" id="toast-icon">🎉</div>
+  <div class="toast-msg"><strong id="toast-title"></strong><span id="toast-body"></span></div>
+</div>
+
+
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+
+<script src="app.js"></script>
+</body>
+</html>
