@@ -30,6 +30,8 @@ O projeto tem como objetivo ajudar estudantes a planejarem seus estudos, organiz
 ## Autor
 
 Vinícius Leal
+Júlia Maria Fernandes Vieira 
+Gabriel da silva
 
 ## Licença
 
